@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/index/index"
+   ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#BBDEF8",
+    "navigationBarTitleText": "小测试",
+    "navigationBarTextStyle":"black"
+  }
+}

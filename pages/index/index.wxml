@@ -1,0 +1,16 @@
+<view class="page">
+  <view wx:for="{{tiku}}" wx:for-index="idx" wx:for-item="item">
+    <text class="page__desc">{{idx+1}}、{{item.name}}</text>
+    <view class="page__bd">
+      <view class="2section section_gap">
+        <radio-group id="{{idx}}" class="radio-group" bindchange="radioChange">
+          <radio class="radio" wx:for-items="{{item.items}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
+            <text>{{item.name}}</text>
+          </radio>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+  <button type='primary' bindtap="nextPage">确定</button>
+</view>
+{{result}}
