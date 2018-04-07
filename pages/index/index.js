@@ -30,20 +30,33 @@ Page({
      console.log(question);
    }, 
   nextPage: function () {
-    if (question.length<=0) 
+    if (question.length<=0) {
+      wx.showToast({
+        title: '没有选择哦！',
+        icon: 'none',
+        duration: 1000,
+        mask: true
+      })
      return ;
+    }
      for(let item of  question ) {
        console.log(item);
        if (item.select != item.daan) {
         console.log("答案有误！");
-        this.setData({
-          result:"答案有误！"
-        })
+        wx.showToast({
+          title: '要不要在想想',
+          icon: 'none',
+          duration: 1000,
+         });
         return;
        }
-    }
-     this.setData({
-       result: "回答正确！"
+    };     
+     wx.showToast({
+       title: '回答正确！',
+       icon: 'success',
+       duration: 1000,
+       mask: true
      })
+      
   }
 }) 
