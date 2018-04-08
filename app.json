@@ -1,11 +1,30 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+     "pages/maths/index",
+      "pages/english/index"
    ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#BBDEF8",
     "navigationBarTitleText": "小测试",
     "navigationBarTextStyle":"black"
-  }
+  },
+    "tabBar": {
+     "position":"top",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "语文测试"
+        },
+        {
+          "pagePath": "pages/maths/index",
+          "text": "数学测试"
+        },
+        {
+            "pagePath": "pages/english/index",
+            "text": "英语测试"
+          }
+      ]
+    }
 }

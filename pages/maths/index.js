@@ -1,5 +1,5 @@
 
-var postData = require('../../data/post-data.js');
+var postData = require('../../data/maths-data.js');
 var question =[];
 Page({
   data: {
